@@ -1,0 +1,327 @@
+/* ===========================
+   TIPOGRAFÍA GENERAL
+============================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f2f0;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===========================
+   ENCABEZADOS Y TEXTOS
+============================= */
+.titulos,
+.titulo2 {
+  text-align: center;
+  font-family: 'Arial Black', sans-serif;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 1rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.titulos {
+  background-color: #f4a261;
+  color: #fff;
+}
+
+.titulo2 {
+  background-color: #264653;
+}
+
+.subtitulos {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.parrafos {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0 1.5rem;
+  color: #333;
+}
+
+/* ===========================
+   IMÁGENES
+============================= */
+.imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===========================
+   SECCIÓN SERVICIOS / EQUIPO
+============================= */
+.recuadrosvarios {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.recuadros {
+  background-color: #e9ecef;
+  border-radius: 15px;
+  width: 280px;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recuadros:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* ===========================
+   BARRA DE NAVEGACIÓN
+============================= */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #2a9d8f, #21867a);
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.search-input {
+  flex: 1 1 300px;
+  max-width: 350px;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #fefefe;
+  color: #333;
+  outline: none;
+  transition: box-shadow 0.3s;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 0 2px #f4a261;
+}
+
+.navbar-botones {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.botones {
+  background-color: #f4a261;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.botones:hover {
+  background-color: #e76f51;
+  transform: translateY(-2px);
+}
+
+/*=====================================
+        DISEÑO DE CONTACTOS
+=======================================*/
+
+.contactos-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fdf5e6;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.titulo-contacto {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: "Arial Black", sans-serif;
+  color: #2a9d8f;
+}
+
+.info-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contacto-item {
+  background-color: #ffffff;
+  padding: 15px;
+  border-left: 5px solid #2a9d8f;
+  border-radius: 5px;
+}
+.contacto-item a {
+  color: #2a9d8f;
+  text-decoration: none;
+}
+.contacto-item a:hover {
+  text-decoration: underline;
+}
+
+/*=====================================
+        Servicios
+=======================================*/
+
+.servicios-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #fffaf5;
+}
+
+.titulo-servicios {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2a9d8f;
+  font-family: "Arial Black", sans-serif;
+}
+
+.tarjetas-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.tarjeta-servicio {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-servicio:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-servicio img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.tarjeta-servicio h3 {
+  color: #264653;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta-servicio p {
+  color: #555;
+}
+
+/*=====================================
+        ADOPCIÓN 
+=======================================*/
+.adopcion-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #fffdf8;
+}
+
+.titulo-adopcion {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2a9d8f;
+  font-family: "Arial Black", sans-serif;
+}
+
+.tarjetas-mascotas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.tarjeta-mascota img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: block;
+  border: 4px solid #2a9d8f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-mascota:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-mascota img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.tarjeta-mascota h3 {
+  color: #264653;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta-mascota p {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 0.3rem 0;
+}
+
+.boton-adoptar {
+  background-color: #e76f51;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-adoptar:hover {
+  background-color: #d65a3f;
+}
